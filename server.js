@@ -26,10 +26,8 @@ mongoose
   });
 app.use(express.json());
 app.use("/api/users", userRouter);
-//code
 
 
-
-//jhaujjwal1970 
-// 1xj64eymDnvKB4eC
-// mongodb+srv://jhaujjwal1970:1xj64eymDnvKB4eC@cluster0.nf9ouu8.mongodb.net/ukjj
+//jhaujjwal1970 // DBUSER
+// 1xj64eymDnvKB4eC //DBPASS
+// mongodb+srv://jhaujjwal1970:1xj64eymDnvKB4eC@cluster0.nf9ouu8.mongodb.net/ukjj // LINK OF DB
