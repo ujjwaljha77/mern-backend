@@ -6,21 +6,12 @@ import productRouter from "./routes/productRoute.js";
 import cors from "cors";
 dotenv.config();
 const app = express();
+app.use(cors());
 // app.use(cors({
-//   origin: [
-//     'http://localhost:5173',              // for local dev
-//     'https://your-frontend.vercel.app'   // your deployed frontend (replace URL)
-//   ],
-//   methods: ['GET', 'POST', 'PUT', 'DELETE','PATCH' ],
+//   origin: ['http://localhost:5173', 'https://your-frontend-name.vercel.app'], // allow both local and deployed frontend
+//   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+//   credentials: true
 // }));
-
-app.use(cors({
-  origin: ['http://localhost:5173'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
-  credentials: true
-}));
-
-
 
 app.use(express.json());
 const dbuser = encodeURIComponent(process.env.DBUSER);
